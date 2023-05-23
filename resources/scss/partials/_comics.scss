@@ -1,0 +1,43 @@
+@use './variables' as *;
+
+.comics-container {
+    background-color: $background-content-color;
+
+    .container {
+        position: relative;
+
+        h3 {
+            position: absolute;
+            top: -1%;
+            color: $primary-color;
+            background-color: $secondary-color;
+        }
+
+        .card {
+            height: 250px;
+
+            img {
+                height: 250px;
+                width: 100%;
+            }
+
+            .card-body {
+                display: none;
+                background-color: $background-content-color;
+                color: $primary-color;
+            }
+
+            &:hover {
+                .card-body {
+                    display: block;
+                    overflow-y: auto;
+                    height: 0;
+                }
+
+                .img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
