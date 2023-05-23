@@ -18,3 +18,11 @@ Route::get('/', function () {
     $books = $db['books'];
     return view('comics', compact('books'));
 });
+
+Route::get('/characters', function () {
+    return view('characters');
+});
+
+Route::get('/movies', function () {
+    return view('movies');
+});
