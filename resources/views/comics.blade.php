@@ -4,7 +4,7 @@
     <div class="comics-container py-4">
         <div class="container">
             <h2>Current Series</h2>
-            <div class="row row-cols-4 g-3">
+            <div class="row row-cols-6 g-3">
                 @foreach ($books as $book)
                     <div class="col">
                         <div class="card">
@@ -16,7 +16,6 @@
                     </div>
                 @endforeach
             </div>
-
         </div>
     </div>
 @endsection

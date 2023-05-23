@@ -1,1 +1,14 @@
+@use './partials/variables' as *;
+@use './partials/header' as *;
 @import '~bootstrap/scss/bootstrap';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
